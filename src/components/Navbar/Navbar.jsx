@@ -1,9 +1,11 @@
 import React from "react";
-import MaterialIcon from "material-icons-react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Login from '../Login/Login';
 
 import './Navbar.css';
 
 const Navbar = () => (
+  <Router>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="/">
       QUICKFIX
@@ -29,9 +31,10 @@ const Navbar = () => (
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="/login">
             Login
           </a>
+          {/* <Link className ="nav-link" to="/login"> Login</Link> */}
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
@@ -45,7 +48,10 @@ const Navbar = () => (
         </li>
       </ul>
     </div>
+    <Route path="/login" component={Login}/>
   </nav>
+  </Router>
+ 
 );
 
 export default Navbar;
