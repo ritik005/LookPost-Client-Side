@@ -1,17 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Login from '../Login/Login';
 
 import './Navbar.css';
 
 const Navbar = () => (
-  <Router>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="/">
+  <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a className="navbar-brand" href="/">
       QUICKFIX
     </a>
     <button
-      class="navbar-toggler"
+      className="navbar-toggler"
       type="button"
       data-toggle="collapse"
       data-target="#navbarColor01"
@@ -19,39 +16,35 @@ const Navbar = () => (
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span className="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">
+    <div className="collapse navbar-collapse" id="navbarColor01">
+      <ul className="navbar-nav mr-auto">
+        <li className="nav-item active">
+          <a className="nav-link" href="#">
             Home
-            <span class="sr-only">(current)</span>
+            <span className="sr-only">(current)</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/login">
+        <li className="nav-item">
+          <a className="nav-link" href="/login">
             Login
           </a>
-          {/* <Link className ="nav-link" to="/login"> Login</Link> */}
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
+        <li className="nav-item">
+          <a className="nav-link" href="/login">
             SignUp
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
+        <li className="nav-item">
+          <a className="nav-link" href="#">
             About
           </a>
         </li>
       </ul>
     </div>
-    <Route path="/login" component={Login}/>
   </nav>
-  </Router>
- 
 );
 
 export default Navbar;

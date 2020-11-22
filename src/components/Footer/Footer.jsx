@@ -5,13 +5,13 @@ import "./Footer.css";
 
 const Footer = () => (
   <section id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-box">
-          <h4 class="head">QUICKFIX</h4>
-          <p class="">Get the answers for the queries and also contribute to the new one..</p>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-4 footer-box">
+          <h4 className="head">QUICKFIX</h4>
+          <p className="">Get the answers for the queries and also contribute to the new one..</p>
         </div>
-        <div class="col-md-4 footer-box">
+        <div className="col-md-4 footer-box">
           <p>
             <b>CONTACT US</b>
           </p>
@@ -25,12 +25,12 @@ const Footer = () => (
             <MaterialIcons icon="mail_outline" /> ritikvarshney2014@gmail.com
           </p>
         </div>
-        <div class="col-md-4 footer-box">
+        <div className="col-md-4 footer-box">
           <p>
             <b>SUBSCRIBE NEWSLETTER</b>
           </p>
-          <input type="email" class="form-control" placeholder="Your Email" />
-          <button type="button" class="btn btn-primary">
+          <input type="email" className="form-control" placeholder="Your Email" />
+          <button type="button" className="btn btn-primary">
             Subscribe
           </button>
         </div>
