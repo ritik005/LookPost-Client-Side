@@ -1,4 +1,5 @@
 import React from "react";
+import { isAuth,signout } from "../../helper/auth"
 
 import './Navbar.css';
 
@@ -21,25 +22,33 @@ const Navbar = () => (
 
     <div className="collapse navbar-collapse" id="navbarColor01">
       <ul className="navbar-nav mr-auto">
-        <li className="nav-item active">
-          <a className="nav-link" href="#">
+        <li className="nav-item ">
+          <a className="nav-link" href="/">
             Home
-            <span className="sr-only">(current)</span>
+            {/* <span className="sr-only">(current)</span> */}
           </a>
         </li>
+        {isAuth()? null:
         <li className="nav-item">
           <a className="nav-link" href="/login">
             Login
           </a>
-        </li>
+        </li>}
+        {isAuth()? null:
         <li className="nav-item">
           <a className="nav-link" href="/login">
             SignUp
           </a>
-        </li>
+        </li>}
+        {isAuth()? 
         <li className="nav-item">
-          <a className="nav-link" href="#">
-            About
+        <a className="nav-link" href="/login" onClick={signout}>
+          SignOut
+        </a>
+      </li>:null}
+        <li className="nav-item">
+          <a className="nav-link" href="/post">
+            Query
           </a>
         </li>
       </ul>
