@@ -9,7 +9,7 @@ import "./Login.css";
 
 const url = "http://localhost:5000";
 
-const Login = (props) => {
+const Login = () => {
   const [formData, setformData] = useState({
     email: "",
     password: "",
@@ -31,7 +31,7 @@ const Login = (props) => {
           if (!token) {
             toast.error(res.data.message);
           } else {
-            authenticate(res, () => {
+            authenticate(res, token, () => {
               toast.success("Login successful!");
             });
           }
@@ -50,7 +50,6 @@ const Login = (props) => {
   };
   return (
     <>
-      {props.token ? <Redirect to="/post" /> : null}
       <ToastContainer />
       <div className="container login-container">
         <div className="row">
