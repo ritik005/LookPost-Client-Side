@@ -1,27 +1,26 @@
 #banner {
- padding: 5%;
+  padding: 5%;
 }
 .promo-title {
- color: #424242;
- font-size: 60px;
- font-weight: 600;
- margin-top: 40px;
- margin-bottom: 2px;
+  color: #424242;
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 2px;
 }
 .text {
-
- color: #707070;
- font-size: 25px;
+  color: #707070;
+  font-size: 25px;
 }
 #banner a {
- color: #fff;
- text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 #banner .btn-primary {
- box-shadow: none;
- padding: 8px 25px;
- border: none;
- border-radius: 20px;
- margin-top: 10px;
- width: 40%;
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 40%;
 }

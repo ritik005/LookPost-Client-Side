@@ -44,7 +44,7 @@ export default function Post() {
    <>
    <ToastContainer />
     <div className="row">
-      <div className="col-md-3 login-form-1">
+      
       
         <form onSubmit={handleSubmit}>
           <fieldset>
@@ -97,7 +97,6 @@ export default function Post() {
           </fieldset>
         </form>
       </div>
-    </div>
     </>
   );
 };

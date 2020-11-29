@@ -1,6 +1,6 @@
 import React from "react";
 import "./Container.css";
-import Image from "../../images/socialnetworking2.svg";
+import Image from "../../images/socialnetworking4.svg";
 
 const Container = () => (
   <section id="banner">

@@ -31,7 +31,7 @@ const Login = () => {
           if (!token) {
             toast.error(res.data.message);
           } else {
-            authenticate(res, token, () => {
+            authenticate(res, () => {
               toast.success("Login successful!");
             });
           }
